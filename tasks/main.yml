@@ -1,0 +1,21 @@
+---
+# tasks file for terraform
+
+# Install for arch
+- name: Install terraform
+  ansible.builtin.package:
+    name: "terraform-{{ terraform_version }}"
+    state: present
+  become: yes
+  when: ansible_distribution == 'Archlinux'
+
+- name: download and install software
+  ansible.builtin.unarchive:
+    src: "{{ terraform_unarchive_src }}"
+    dest: "{{ terraform_destination }}"
+    remote_src: yes
+    mode: '0755'
+    owner: root
+    group: root
+  become: yes
+  when: ansible_distribution == 'Ubuntu'

@@ -1,0 +1,18 @@
+galaxy_info:
+  author: Jordan Murray
+  description: This installs terraform.
+  company: MurrayFoundry
+
+  license: MIT
+
+  min_ansible_version: 2.1
+
+   platforms:
+   - name: Debian
+     versions:
+     - all
+   - name: Arch
+     versions:
+     - all
+
+  galaxy_tags: []
