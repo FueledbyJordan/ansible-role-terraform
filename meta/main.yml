@@ -7,12 +7,12 @@ galaxy_info:
 
   min_ansible_version: 2.1
 
-   platforms:
-   - name: Debian
-     versions:
-     - all
-   - name: Arch
-     versions:
-     - all
+  platforms:
+  - name: Debian
+    versions:
+    - all
+  - name: Arch
+    versions:
+    - all
 
   galaxy_tags: []
