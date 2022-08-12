@@ -4,7 +4,7 @@
 # Install for arch
 - name: Install terraform
   ansible.builtin.package:
-    name: "terraform-{{ terraform_version }}"
+    name: terraform
     state: present
   become: yes
   when: ansible_distribution == 'Archlinux'
